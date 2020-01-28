@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:dev_f070-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -63,7 +64,7 @@ U 1 1 5E2637E0
 P 6850 1200
 F 0 "C?" H 6965 1246 50  0000 L CNN
 F 1 "10uF" H 6965 1155 50  0000 L CNN
-F 2 "" H 6888 1050 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 6888 1050 50  0001 C CNN
 F 3 "~" H 6850 1200 50  0001 C CNN
 	1    6850 1200
 	1    0    0    -1  
@@ -74,7 +75,7 @@ U 1 1 5E263F82
 P 8200 1200
 F 0 "C?" H 8315 1246 50  0000 L CNN
 F 1 "1uF" H 8315 1155 50  0000 L CNN
-F 2 "" H 8238 1050 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 8238 1050 50  0001 C CNN
 F 3 "~" H 8200 1200 50  0001 C CNN
 	1    8200 1200
 	1    0    0    -1  
@@ -96,7 +97,7 @@ U 1 1 5E265F36
 P 3000 2450
 F 0 "Y?" H 3000 2698 50  0000 C CNN
 F 1 "Resonator" H 3000 2607 50  0000 C CNN
-F 2 "" H 2975 2450 50  0001 C CNN
+F 2 "Crystal:Resonator_SMD_muRata_SFECV-3Pin_6.9x2.9mm_HandSoldering" H 2975 2450 50  0001 C CNN
 F 3 "~" H 2975 2450 50  0001 C CNN
 	1    3000 2450
 	1    0    0    -1  
@@ -256,7 +257,7 @@ U 1 1 5E29457E
 P 5400 1200
 F 0 "C?" V 5652 1200 50  0000 C CNN
 F 1 "10uF" V 5561 1200 50  0000 C CNN
-F 2 "" H 5438 1050 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 5438 1050 50  0001 C CNN
 F 3 "~" H 5400 1200 50  0001 C CNN
 	1    5400 1200
 	0    -1   -1   0   
@@ -503,7 +504,7 @@ U 1 1 5E330327
 P 5400 1400
 F 0 "C?" V 5148 1400 50  0000 C CNN
 F 1 "100pF" V 5239 1400 50  0000 C CNN
-F 2 "" H 5438 1250 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 5438 1250 50  0001 C CNN
 F 3 "~" H 5400 1400 50  0001 C CNN
 	1    5400 1400
 	0    1    1    0   
@@ -670,4 +671,58 @@ F 3 "" H 9700 3700 50  0001 C CNN
 	1    9700 3700
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:Conn_01x07_Male J?
+U 1 1 5E2EEC2E
+P 3950 4950
+F 0 "J?" H 4058 5431 50  0000 C CNN
+F 1 "Left_Headers" H 4058 5340 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical" H 3950 4950 50  0001 C CNN
+F 3 "~" H 3950 4950 50  0001 C CNN
+	1    3950 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x08_Male J?
+U 1 1 5E2F1CDD
+P 6350 4900
+F 0 "J?" H 6458 5381 50  0000 C CNN
+F 1 "Right_Headers" H 6458 5290 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 6350 4900 50  0001 C CNN
+F 3 "~" H 6350 4900 50  0001 C CNN
+	1    6350 4900
+	1    0    0    -1  
+$EndComp
+Text GLabel 4150 4650 2    50   Output ~ 0
+Q1
+Text GLabel 4150 4750 2    50   Output ~ 0
+Q2
+Text GLabel 4150 4850 2    50   Output ~ 0
+PA0
+Text GLabel 4150 4950 2    50   Output ~ 0
+PA1
+Text GLabel 4150 5050 2    50   Output ~ 0
+PA2
+Text GLabel 4150 5150 2    50   Output ~ 0
+PA3
+Text GLabel 4150 5250 2    50   Output ~ 0
+PA4
+Text GLabel 6550 4600 2    50   Output ~ 0
+PA14
+Text GLabel 6550 4700 2    50   Output ~ 0
+PA13
+Text GLabel 6550 4800 2    50   Output ~ 0
+PA10|12
+Text GLabel 6550 4900 2    50   Output ~ 0
+PA9|11
+Text GLabel 4650 3000 0    50   Input ~ 0
+PB1
+Text GLabel 6550 5000 2    50   Output ~ 0
+PB1
+Text GLabel 6550 5100 2    50   Output ~ 0
+PA7
+Text GLabel 6550 5200 2    50   Output ~ 0
+PA6
+Text GLabel 6550 5300 2    50   Output ~ 0
+PA5
 $EndSCHEMATC
